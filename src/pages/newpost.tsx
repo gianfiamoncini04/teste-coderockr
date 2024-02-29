@@ -21,7 +21,7 @@ export function NewPost() {
 						<input type="text" id="img" placeholder="Fill the image URL" className="input"/>
 
 						<label htmlFor="post " className="text-2xl">Post</label>
-						<textarea id="post" placeholder="Post..." cols="30" rows="6" className="input"/>
+						<textarea id="post" placeholder="Post..." cols={30} rows={6} className="input"/>
 
 						<button type="submit" className="button">
 							<img src="/pencil.png" alt="Pencil" className="fill-white"/>
