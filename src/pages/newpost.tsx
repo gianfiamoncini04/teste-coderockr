@@ -6,7 +6,7 @@ export function NewPost() {
 					<img
 						src="https://sample-posts-frontend-test.s3.amazonaws.com/post_16.jpg"
 						alt="Post"
-            className="size-96 rounded-full object-cover aspect-square"
+						className="size-96 rounded-full object-cover aspect-square"
 					/>
 					<h1 className="text-[#F1A10A] font-bold text-4xl">New Post</h1>
 
