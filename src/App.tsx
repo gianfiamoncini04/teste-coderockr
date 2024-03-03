@@ -4,10 +4,7 @@ import { Contact } from "./components/contact.tsx";
 import { NewPost } from "./pages/newpost.tsx";
 import { Home } from "./pages/home-infinito.tsx";
 import { SinglePost } from "./pages/single-post.tsx";
-
 import { useState } from "react";
-
-import data from "./api/posts.json";
 
 export function App() {
 	const [modal, setModal] = useState(false);
@@ -18,7 +15,7 @@ export function App() {
 			<Contact modal={modal} toggleModal={() => {setModal(!modal)}}/>
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/post/:postid" element={<SinglePost data={data} />} />
+				<Route path="/post/:postid" element={<SinglePost />} />
 				<Route path="/newpost" element={<NewPost />} />
 			</Routes>
 		</>
